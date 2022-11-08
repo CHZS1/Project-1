@@ -2,6 +2,7 @@
     .container {
         --offset: 8px;
         width: calc(100% - var(--offset) * 2);
+        -ms-width: calc(100% - 8px * 2);
     }
 
     .hero__wrap {
@@ -75,7 +76,7 @@
     .container {
         --offset: 15px;
         width: calc(100% - var(--offset) * 2);
-
+        -ms-width: calc(100% - 15px * 2);
     }
 
     .about__list {
@@ -104,6 +105,7 @@
         flex-direction: column;
         --offset: 50px;
         width: calc((100% - var(--offset)) / 2);
+        -ms-width: calc(100% - 50px / 2);
         height: 689px;
     }
 
@@ -146,16 +148,19 @@
 
     .burger:hover {
         color: var(--orange);
+        -ms-color: orange;
     }
 
     .burger:focus {
         outline: none;
+        -ms-outline: 2px solid orange;
         outline: 2px solid var(--orange);
         outline-offset: 4px;
     }
 
     .burger:active {
         color: var(--orange);
+        -ms-color: orange;
     }
 
     .burger__line {
@@ -617,6 +622,7 @@
     .container {
         --offset: 8px;
         width: calc(100% - var(--offset) * 2);
+        -ms-width: calc(100% - 8px * 2);
     }
 
     .header {
@@ -753,6 +759,7 @@
         padding: 0;
         background: none;
         color: var(--black);
+        -ms-color: #000;
     }
 
     .about__info {
@@ -762,6 +769,7 @@
         font-size: 14px;
         line-height: 28px;
         color: var(--black);
+        -ms-color: #000;
     }
 
     .btn--about {
@@ -770,14 +778,19 @@
         font-size: 12px;
         line-height: 15px;
         color: var(--orange);
+        -ms-color: orange;
     }
 
     .btn--about:focus {
+        -ms-background-color: orange;
+        -ms-color: white;
         background-color: var(--orange);
         color: var(--white);
     }
 
     .btn--about:active {
+        -ms-background-color: orange;
+        -ms-color: white;
         background-color: var(--orange);
         color: var(--white);
     }
